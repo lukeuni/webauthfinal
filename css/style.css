@@ -1,0 +1,874 @@
+body{
+    margin: 0;
+     font-family: 'Neutra Display', sans-serif; 
+}
+
+/* Sidebar internal styles */
+.sidebar {
+    background: black;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -200px;
+    top: 0px;
+    transition: left 0.3s linear;
+}
+
+/* Sidebar visibile transition and position*/
+
+.sidebar.visible {
+    left: 0px;
+    transition: left 0.3s linear;
+}
+
+/* ul list styles*/
+
+ul {
+    margin-top: 23px;
+    padding: 0px;
+}
+
+/* list styles*/
+
+ul li {
+    list-style: none;
+}
+
+/*  link styles such as underlining and color etc.*/
+
+ul li a {
+    color: #fff;
+    border-bottom: 1px solid #111;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Neutra Display', sans-serif;
+}
+
+/* Sidebar button styles for lines.*/
+
+.sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 19px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 15px;
+    right: -90px;
+    ;
+}
+
+/* Edit physical lines of button.*/
+
+.sidebar-btn span {
+    height: 7px;
+    background: black;
+    margin-bottom: 3px;
+    display: block;
+}
+
+/* changing 2 line to have smaller width than top.*/
+
+.sidebar-btn span:nth-child(2) {
+    width: 75%;
+}
+
+/* changing third line to be smaller than 2nd line */
+
+.sidebar-btn span:nth-child(3) {
+    width: 50%;
+}
+
+/* Blink 182 logo top right. */
+
+.logo img {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+    margin: 20px;
+    float: right;
+}
+
+
+/* White sticky nav bar */
+
+.nav {
+
+    margin-bottom: 10px;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+.nav h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-family: nevis;
+    
+/* cds in nav bar rotating animations */
+
+}
+.theme1 img{
+    width: 50px;
+    height:50px;
+    float: right;
+    margin:30px; 
+}
+.theme1 > img:hover {
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.theme2 img{
+    width: 50px;
+    height:50px;
+    float: right;
+    margin:30px;v
+}
+.theme2 > img:hover {
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.theme3 img{
+    width: 50px;
+    height:50px;
+    float: right;
+    margin:30px;
+}
+.theme3 > img:hover {
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Nav dropshadow on scroll */
+
+#nav.active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero grid section*/
+
+
+
+
+/* Start of Grid*/
+
+.grid {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+        
+        "hero hero"
+        "buyalbum buyalbum"
+        "section1 section1" 
+        "section2 section2" 
+        "section4 section4"
+        "section3 section3"
+        "section5 section5"
+        "section6 section6"
+        "section7 section7";
+}
+
+/* hero section start */
+
+.hero {
+    grid-area: hero;
+    background-color: white;
+    width: 100%;
+    background-image: url(/assets/images/backgrounds/hero__home__bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 52em;
+    transition: background 1s;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    }
+
+  .hero img{
+    display:block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16em;
+    }
+
+body.cd1Theme .hero{
+     background-image: url(/assets/images/backgrounds/hero__st__bg.png); 
+}
+body.cd2Theme .hero{
+     background-image: url(/assets/images/backgrounds/hero__to__bg.png); 
+}
+body.cd3Theme .hero{
+     background-image: url(/assets/images/backgrounds/hero__es__bg.png); 
+}
+
+/* hero section end */
+
+.buyalbum{
+    grid-area: buyalbum;
+    background-image: url(/assets/images/backgrounds/buyalbum__home__bg.png);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: background 1s;
+}
+body.cd1Theme .buyalbum{
+    background-image: 
+    url(/assets/images/backgrounds/buyalbum__st__bg.png);
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.smallerfont{
+    color:white;
+    text-align: center;
+    font-size: 2.0em;
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-family: 'Neutra Display Light';
+    text-shadow: 3px 3px #000;
+}
+body.cd1Theme .smallerfont{
+    color:black;
+    text-align: center;
+    font-size: 2.0em;
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-family: 'Neutra Display Light';
+    text-shadow: 3px 3px #fff;
+}
+.bigfont{
+    color:white;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-family: 'Neutra Display Light';
+    text-shadow: 12px 9px #000;
+}
+body.cd1Theme .bigfont{
+    color:#EA52AC;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top:100px;
+    margin-bottom: 100px;
+    font-family: 'Neutra Display Light';
+    text-shadow: 4px 4px #fff;
+}
+
+
+.buyalbum iframe{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+}
+.buyalbum #iframe2{
+    display: none;
+}
+body.cd1Theme iframe{
+    display: none;
+    transition: 1s;
+}
+body.cd1Theme #iframe2{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+}
+
+.buyalbum p{
+    color:white;
+    text-align: center;
+    font-family: 'Neutra Display Light';
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+body.cd1Theme .buyalbum p{
+    color:black;
+    text-align: center;
+    font-family: 'Neutra Display Light';
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.buyalbum a{
+text-decoration: none;  
+}
+
+.buyalbum a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* Section 1 image 1 start */
+
+.section1 {
+    grid-area: section1;
+    background-color: #e5e5e5;
+    background-image: url(/assets/images/backgrounds/section1__bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+body.cd1Theme .section1{
+     background-image: url(/assets/images/backgrounds/section1__st__bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+}
+
+/* section 1 image 1 end */
+
+.section2 {
+    grid-area: section2;
+    background-image: url(/assets/images/backgrounds/section2__bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    transition: background 1s;
+}
+body.cd1Theme .section2{
+     background-image: url(/assets/images/backgrounds/section2__st__bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.section3 {
+    grid-area: section3;
+    background-color: #f2f2f2;
+    background-image: url(/assets/images/backgrounds/section3__bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+body.cd1Theme .section3{
+     background-image: url(/assets/images/backgrounds/section3__st__bg.jpg);
+     background-position: bottom;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.section4 {
+    grid-area: section4;
+    background-color: #b2b2b2;
+    background-image: url(/assets/images/backgrounds/section4__bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background 1s;
+}
+body.cd1Theme .section4{
+     background-image: url(/assets/images/backgrounds/section4__st__bg.jpg);
+     background-position: bottom;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.section5 {
+    grid-area: section5;
+    background-image: url(/assets/images/backgrounds/section5__bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-top: 5px;
+    text-align: center;
+    transition: background 1s;
+}
+body.cd1Theme .section5 {
+    background-image: url(/assets/images/backgrounds/section5__st__bg.png);
+    border-top: 5px solid black;
+    margin-top: 0px;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+.maptext{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    z-index: 100;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+    
+.bigfontcenter{
+    display: block;
+    color:white;
+    font-size: 2.5em;
+    font-family: 'Neutra Display Light';
+    padding-top: 50px;
+}
+body.cd1Theme .bigfontcenter2 {
+    display: block;
+    color:black;
+    font-size: 2.5em;
+    font-family: 'Neutra Display Light';
+    padding-top: 50px;
+}
+.dates{
+    display: inline-block;
+    color:white;
+    font-size: 1.5em;
+    font-family: 'Neutra Display Light';
+    padding-top: 50px;
+    float: left;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.location{
+    display: inline-block;
+    box-sizing: border-box;
+    color:white;
+    font-size: 1.5em;
+    font-family: 'Neutra Display Light';
+    padding-top: 100px;
+}
+
+.location li{
+    margin-bottom: 80px;
+}
+
+body.cd1Theme .dates {
+    display: block;
+    color:black;
+    font-size: 2.5em;
+    font-family: 'Neutra Display Light';
+    padding-top: 50px;
+}
+
+.dates li{
+    margin-bottom: 70px;
+    padding-bottom: 1px #fff
+}
+
+
+.booknow{
+    display: block;
+    color:white;
+    font-size: 1em;
+    font-family: 'Neutra Display Light';
+    padding-top: 20px;  
+    float: right;
+    margin-right: 50px;
+}
+.tickets{
+    width: 60%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.section6 {
+    grid-area: section6;
+    background-image: url(/assets/images/backgrounds/section6__bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: 5px;
+    text-align-last: center;
+}
+#iframe3 {
+    width: 100%;
+    height: 100%;
+}
+#iframe4{
+    display: none;
+}
+body.cd1Theme .section6 {
+    background-image: url(/assets/images/backgrounds/section5__st__bg.png);
+    border-top: 5px solid black;
+    margin-top: 0px;
+}
+body.cd1Theme .section6 #iframe3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+body.cd1Theme .section6 #iframe4{
+    display: block;
+    transition: iframe 1s;
+}
+.section6 img{
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    float: left;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.section6 iframe{
+    width: 100%;
+    height: 100%;
+}
+.section7 {
+    text-align: center;
+    grid-area: section7;
+    background-color: black;
+    margin-top: 10px;
+    background-image: url(/assets/images/backgrounds/hero__footer__bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section7 img{
+    display: inline-block;
+    width: 6%;
+    padding: 20px;
+}
+
+
+/* media query for hiding certain pictures on smaller devices. */
+
+@media screen and (max-width: 736px) {
+    
+    .theme1 img{
+        display: none;
+    }
+     .theme2 img{
+        display: none;
+    }
+     .theme3 img{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+}
+
+
+/* media query for desktop website. */
+
+@media screen and (min-width: 736px) {
+    
+    .hero img{
+        display:block;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10%;
+        height: auto; 
+    }
+    .grid {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr 0.8fr;
+        grid-template-areas:
+            "hero hero hero hero"
+            "buyalbum buyalbum buyalbum buyalbum"
+            "section1 section1 section2 section2"
+            "section3 section3 section4 section4"
+            "section5 section5 section5 section5"
+            "section6 section6 section6 section6"
+            "section7 section7 section7 section7";  
+    }
+}
+
+
+
+
+
+
+
+
+/* start of about us page */
+
+.grid2{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+        "section_1 section_1 section_1 section_1 section_1 section_1 section_1 section_1"
+        "section_2 section_2 section_2 section_2 section_2 section_2 section_2 section_2"
+        "section_3 section_3 section_3 section_3 section_3 section_3 section_3 section_3"
+        "section_4 section_4 section_4 section_4 section_4 section_4 section_4 section_4"
+        "section_5 section_5 section_5 section_5 section_5 section_5 section_5 section_5"
+        "section_6 section_6 section_6 section_6 section_6 section_6 section_6 section_6"
+        "section_7 section_7 section_7 section_7 section_7 section_7 section_7 section_7"
+        "section_8 section_8 section_8 section_8 section_8 section_8 section_8 section_8"
+        "section_9 section_9 section_9 section_9 section_9 section_9 section_9 section_9"
+        "section_10 section_10 section_10 section_10 section_10 section_10 section_10 section_10"
+    
+}
+
+
+.section_1{
+    grid-area: section_1;
+    font-family: 'Neutra Display Light';
+    background-color: black;
+    height: 30em;
+    background-image: url(/assets/images/backgrounds/blink_aboutus__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 10%;
+}
+.section_1 h1{
+    display: block;
+    font-family: 'Neutra Display Light';
+    color:white;
+    font-size: 7em;
+    text-align:center;
+    margin-top: 200px;
+}
+.section_2{
+    grid-area: section_2;
+    background-color: black;
+    height: 20em;
+    background-image: url(/assets/images/albums/enema__os__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_3{
+    grid-area: section_3;
+    background-color: black;
+    height: 20em;
+    background-image: url(/assets/images/albums/california__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.section_4{
+    grid-area: section_4;
+    background-color: purple;
+    height: 20em;
+     background-image: url(/assets/images/albums/Cheshire_cat__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_5{
+    grid-area: section_5;
+    background-color: black;
+    height: 20em;
+    background-image: url(/assets/images/albums/neighborhoods__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_6{
+    grid-area: section_6;
+    background-color: black;
+    height: 20em;
+     background-image: url(/assets/images/albums/take__off__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_7{
+    grid-area: section_7;
+    background-color: black;
+    height: 20em;
+    background-image: url(/assets/images/albums/dude__ranch__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_8{
+    grid-area: section_8;
+    background-color: black;
+    height: 20em;
+     background-image: url(/assets/images/albums/dick_lips__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_9{
+    grid-area: section_9;
+    background-color: black;
+    height: 20em;
+    background-image: url(/assets/images/albums/greatest__hits__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section_10{
+    grid-area: section_10;
+    background-color: white;
+    height: 50em;
+    background-image: url(/assets/images/backgrounds/buyalbum__st__bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid2 {
+        
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "section_1 section_1 section_1 section_1 section_1 section_1 section_1 section_1"
+        "section_2 section_2 section_3 section_3 section_4 section_4 section_5 section_5"
+        "section_6 section_6 section_7 section_7 section_8 section_8 section_9 section_9"
+        "section_10 section_10 section_10 section_10 section_10 section_10 section_10 section_10"
+    ;  
+    }
+}
+
+
+
+
+/* start of CD page */
+
+
+.grid3 {
+        
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "cd__spin__1 cd__spin__1 cd__spin__1"
+        "cd__spin__2 cd__spin__2 cd__spin__2"
+        "cd__spin__3 cd__spin__3 cd__spin__3";       
+}
+
+.cd__spin__1{
+    grid-area: cd__spin__1;
+    background-color: black;
+    height: 100vh;
+  
+}
+.cd__spin__2{
+    grid-area: cd__spin__2;
+    background-color: black;
+    height: 100vh;
+}
+.cd__spin__3{
+    grid-area: cd__spin__3;
+    background-color: black;
+    height: 100vh;
+}
+.cd__spin__1 img{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+.spinning img:hover {
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.cd__spin__2 img{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+     margin-top: 30vh;
+}
+.cd__spin__3 img{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 30vh;
+}
+
+
+
+
+/* CD image screen media query for large screens*/
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid3 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "cd__spin__1 cd__spin__2 cd__spin__3 "
+    ;  
+    }
+}
+
+
+
+/* CD image screen media query for large screens*/
+
+    .grid4 {
+        
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "section__demo"
+            ;  
+    }
+}
+
+.section__demo{
+    grid-area: section__demo
+}
+.section__demo iframe{
+    height: 100vh;
+    width: 100vh;
+    
+}
+
+    
