@@ -202,7 +202,7 @@ ul li a {
     grid-area: hero;
     background-color: white;
     width: 100%;
-    background-image: url(/assets/images/backgrounds/hero__home__bg.png);
+    background-image: url(../assets/images/backgrounds/hero__home__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
