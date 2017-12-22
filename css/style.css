@@ -242,7 +242,7 @@ body.cd3Theme .hero{
 }
 body.cd1Theme .buyalbum{
     background-image: 
-    url(/assets/images/backgrounds/buyalbum__st__bg.png);
+    url(../assets/images/backgrounds/buyalbum__st__bg.png);
     border-bottom: 5px solid black;
     border-top: 5px solid black;
     margin-top: 0px;
@@ -339,14 +339,14 @@ text-decoration: none;
 .section1 {
     grid-area: section1;
     background-color: #e5e5e5;
-    background-image: url(/assets/images/backgrounds/section1__bg.jpg);
+    background-image: url(../assets/images/backgrounds/section1__bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: background 1s;
 }
 body.cd1Theme .section1{
-     background-image: url(/assets/images/backgrounds/section1__st__bg.jpg);
+     background-image: url(../assets/images/backgrounds/section1__st__bg.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -357,7 +357,7 @@ body.cd1Theme .section1{
 
 .section2 {
     grid-area: section2;
-    background-image: url(/assets/images/backgrounds/section2__bg.png);
+    background-image: url(../assets/images/backgrounds/section2__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -365,7 +365,7 @@ body.cd1Theme .section1{
     transition: background 1s;
 }
 body.cd1Theme .section2{
-     background-image: url(/assets/images/backgrounds/section2__st__bg.jpg);
+     background-image: url(../assets/images/backgrounds/section2__st__bg.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -374,14 +374,14 @@ body.cd1Theme .section2{
 .section3 {
     grid-area: section3;
     background-color: #f2f2f2;
-    background-image: url(/assets/images/backgrounds/section3__bg.jpg);
+    background-image: url(../assets/images/backgrounds/section3__bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: background 1s;
 }
 body.cd1Theme .section3{
-     background-image: url(/assets/images/backgrounds/section3__st__bg.jpg);
+     background-image: url(../assets/images/backgrounds/section3__st__bg.jpg);
      background-position: bottom;
      background-size: cover;
      background-repeat: no-repeat;
@@ -389,21 +389,21 @@ body.cd1Theme .section3{
 .section4 {
     grid-area: section4;
     background-color: #b2b2b2;
-    background-image: url(/assets/images/backgrounds/section4__bg.jpg);
+    background-image: url(../assets/images/backgrounds/section4__bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: background 1s;
 }
 body.cd1Theme .section4{
-     background-image: url(/assets/images/backgrounds/section4__st__bg.jpg);
+     background-image: url(../assets/images/backgrounds/section4__st__bg.jpg);
      background-position: bottom;
      background-size: cover;
      background-repeat: no-repeat;
 }
 .section5 {
     grid-area: section5;
-    background-image: url(/assets/images/backgrounds/section5__bg.png);
+    background-image: url(../assets/images/backgrounds/section5__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -413,7 +413,7 @@ body.cd1Theme .section4{
     transition: background 1s;
 }
 body.cd1Theme .section5 {
-    background-image: url(/assets/images/backgrounds/section5__st__bg.png);
+    background-image: url(../assets/images/backgrounds/section5__st__bg.png);
     border-top: 5px solid black;
     margin-top: 0px;
 }
@@ -499,7 +499,7 @@ body.cd1Theme .dates {
 
 .section6 {
     grid-area: section6;
-    background-image: url(/assets/images/backgrounds/section6__bg.png);
+    background-image: url(../assets/images/backgrounds/section6__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@ body.cd1Theme .dates {
     display: none;
 }
 body.cd1Theme .section6 {
-    background-image: url(/assets/images/backgrounds/section5__st__bg.png);
+    background-image: url(../assets/images/backgrounds/section5__st__bg.png);
     border-top: 5px solid black;
     margin-top: 0px;
 }
@@ -545,7 +545,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section7;
     background-color: black;
     margin-top: 10px;
-    background-image: url(/assets/images/backgrounds/hero__footer__bg.png);
+    background-image: url(../assets/images/backgrounds/hero__footer__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -638,7 +638,7 @@ body.cd1Theme .section6 #iframe4{
     font-family: 'Neutra Display Light';
     background-color: black;
     height: 30em;
-    background-image: url(/assets/images/backgrounds/blink_aboutus__bg.jpg);
+    background-image: url(../assets/images/backgrounds/blink_aboutus__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -656,7 +656,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_2;
     background-color: black;
     height: 20em;
-    background-image: url(/assets/images/albums/enema__os__bg.jpg);
+    background-image: url(../assets/images/albums/enema__os__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -665,7 +665,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_3;
     background-color: black;
     height: 20em;
-    background-image: url(/assets/images/albums/california__bg.jpg);
+    background-image: url(../assets/images/albums/california__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -675,7 +675,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_4;
     background-color: purple;
     height: 20em;
-     background-image: url(/assets/images/albums/Cheshire_cat__bg.jpg);
+     background-image: url(../assets/images/albums/Cheshire_cat__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -684,7 +684,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_5;
     background-color: black;
     height: 20em;
-    background-image: url(/assets/images/albums/neighborhoods__bg.jpg);
+    background-image: url(../assets/images/albums/neighborhoods__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -693,7 +693,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_6;
     background-color: black;
     height: 20em;
-     background-image: url(/assets/images/albums/take__off__bg.jpg);
+     background-image: url(../assets/images/albums/take__off__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -702,7 +702,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_7;
     background-color: black;
     height: 20em;
-    background-image: url(/assets/images/albums/dude__ranch__bg.jpg);
+    background-image: url(../assets/images/albums/dude__ranch__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -711,7 +711,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_8;
     background-color: black;
     height: 20em;
-     background-image: url(/assets/images/albums/dick_lips__bg.jpg);
+     background-image: url(../assets/images/albums/dick_lips__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -720,7 +720,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_9;
     background-color: black;
     height: 20em;
-    background-image: url(/assets/images/albums/greatest__hits__bg.jpg);
+    background-image: url(../assets/images/albums/greatest__hits__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -729,7 +729,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_10;
     background-color: white;
     height: 50em;
-    background-image: url(/assets/images/backgrounds/buyalbum__st__bg.png);
+    background-image: url(../assets/images/backgrounds/buyalbum__st__bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
