@@ -221,20 +221,20 @@ ul li a {
     }
 
 body.cd1Theme .hero{
-     background-image: url(/assets/images/backgrounds/hero__st__bg.png); 
+     background-image: url(../assets/images/backgrounds/hero__st__bg.png); 
 }
 body.cd2Theme .hero{
-     background-image: url(/assets/images/backgrounds/hero__to__bg.png); 
+     background-image: url(../assets/images/backgrounds/hero__to__bg.png); 
 }
 body.cd3Theme .hero{
-     background-image: url(/assets/images/backgrounds/hero__es__bg.png); 
+     background-image: url(../assets/images/backgrounds/hero__es__bg.png); 
 }
 
 /* hero section end */
 
 .buyalbum{
     grid-area: buyalbum;
-    background-image: url(/assets/images/backgrounds/buyalbum__home__bg.png);
+    background-image: url(../assets/images/backgrounds/buyalbum__home__bg.png);
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -850,25 +850,21 @@ body.cd1Theme .section6 #iframe4{
 
 /* CD image screen media query for large screens*/
 
-    .grid4 {
-        
+.sectiondemo{
+    grid-area: sectiondemo;
+    background-color: red;
+    height: 100vh;
+}
+.sectiondemo iframe{
+    height: 100vh;
+    width: 100vw;
+}  
+.grid4{
         display: grid;
         overflow: hidden;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "section__demo"
-            ;  
-    }
+            "sectiondemo"
 }
 
-.section__demo{
-    grid-area: section__demo
-}
-.section__demo iframe{
-    height: 100vh;
-    width: 100vh;
-    
-}
-
-    
