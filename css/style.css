@@ -1,6 +1,7 @@
 body{
     margin: 0;
      font-family: 'Neutra Display', sans-serif; 
+    text-decoration: none;
 }
 
 /* Sidebar internal styles */
@@ -330,7 +331,7 @@ text-decoration: none;
 }
 
 .buyalbum a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: yellow;
 }
 
@@ -507,13 +508,11 @@ body.cd1Theme .dates {
     margin-top: 5px;
     text-align-last: center;
 }
-#iframe3 {
-    width: 100%;
-    height: 100%;
+.section6 video{
+    height: 100vh;
+    width: 100vw;
 }
-#iframe4{
-    display: none;
-}
+
 body.cd1Theme .section6 {
     background-image: url(../assets/images/backgrounds/section5__st__bg.png);
     border-top: 5px solid black;
@@ -637,7 +636,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: section_1;
     font-family: 'Neutra Display Light';
     background-color: black;
-    height: 30em;
+    height: 15em;
     background-image: url(../assets/images/backgrounds/blink_aboutus__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -650,11 +649,10 @@ body.cd1Theme .section6 #iframe4{
     color:white;
     font-size: 7em;
     text-align:center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .section_2{
     grid-area: section_2;
-    background-color: black;
     height: 20em;
     background-image: url(../assets/images/albums/enema__os__bg.jpg);
     background-repeat: no-repeat;
@@ -663,7 +661,6 @@ body.cd1Theme .section6 #iframe4{
 }
 .section_3{
     grid-area: section_3;
-    background-color: black;
     height: 20em;
     background-image: url(../assets/images/albums/california__bg.jpg);
     background-repeat: no-repeat;
@@ -673,9 +670,8 @@ body.cd1Theme .section6 #iframe4{
 }
 .section_4{
     grid-area: section_4;
-    background-color: purple;
     height: 20em;
-     background-image: url(../assets/images/albums/Cheshire_cat__bg.jpg);
+    background-image: url(../assets/images/albums/Cheshire_cat__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -691,16 +687,14 @@ body.cd1Theme .section6 #iframe4{
 }
 .section_6{
     grid-area: section_6;
-    background-color: black;
     height: 20em;
-     background-image: url(../assets/images/albums/take__off__bg.jpg);
+    background-image: url(../assets/images/albums/take__off__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .section_7{
     grid-area: section_7;
-    background-color: black;
     height: 20em;
     background-image: url(../assets/images/albums/dude__ranch__bg.jpg);
     background-repeat: no-repeat;
@@ -709,16 +703,14 @@ body.cd1Theme .section6 #iframe4{
 }
 .section_8{
     grid-area: section_8;
-    background-color: black;
     height: 20em;
-     background-image: url(../assets/images/albums/dick_lips__bg.jpg);
+    background-image: url(../assets/images/albums/dick_lips__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .section_9{
     grid-area: section_9;
-    background-color: black;
     height: 20em;
     background-image: url(../assets/images/albums/greatest__hits__bg.jpg);
     background-repeat: no-repeat;
@@ -727,14 +719,51 @@ body.cd1Theme .section6 #iframe4{
 }
 .section_10{
     grid-area: section_10;
-    background-color: white;
-    height: 50em;
-    background-image: url(../assets/images/backgrounds/buyalbum__st__bg.png);
+    background-color: white<;
+    height: 7em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
+.section_10 img{
+    float: left;
+    height: 75px;
+    width: auto;
+    margin-top: 20px;
+    
+}
+.section_10 p{
+    color: black;
+    float: right;
+    margin-top: 50px;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+.overlay{
+    height: 20em;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.text{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    color: yellow;
+    font-size: 25px;  
+    text-align: center;
+}
+.albumlinks{
+    text-decoration: none;
+}
+
+
 
 
 
@@ -867,4 +896,6 @@ body.cd1Theme .section6 #iframe4{
         grid-template-areas:
             "sectiondemo"
 }
+
+/* Enema of the state page.  */
 
