@@ -647,7 +647,7 @@ body.cd1Theme .section6 #iframe4{
     display: block;
     font-family: 'Neutra Display Light';
     color:white;
-    font-size: 3em;
+    font-size: 7em;
     text-align:center;
     margin-top: 100px;
 }
@@ -782,17 +782,9 @@ body.cd1Theme .section6 #iframe4{
         "section_2 section_2 section_3 section_3 section_4 section_4 section_5 section_5"
         "section_6 section_6 section_7 section_7 section_8 section_8 section_9 section_9"
         "section_10 section_10 section_10 section_10 section_10 section_10 section_10 section_10"
-    ;      
+    ;  
     }
-    
-.section_1 h1{
-    display: block;
-    font-family: 'Neutra Display Light';
-    color:white;
-    font-size: 7em;
-    text-align:center;
-    margin-top: 100px;
-    }
+}
 
 
 
@@ -889,6 +881,7 @@ body.cd1Theme .section6 #iframe4{
 
 .sectiondemo{
     grid-area: sectiondemo;
+    background-color: red;
     height: 100vh;
 }
 .sectiondemo iframe{
@@ -1130,3 +1123,74 @@ body.cd1Theme .section6 #iframe4{
 
 
 /* cheshire cat end.  */
+
+
+/* New grid, I'm using this so I don't have to rewrite grid code each time.  */
+
+.gridtemplate {
+        
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "template1 template1 template1 template1"
+        "template2 template2 template2 template2"
+        "template3 template3 template3 template3"
+        "template4 template4 template4 template4"
+        "template5 template5 template5 template5";
+}
+.template1{
+    grid-area: template1;
+    height: 20em;
+    background-color: red;
+}
+.template2{
+    grid-area: template2;
+    height: 20em;
+    background-color: green;
+}
+
+.template3{
+    grid-area: template3;
+    height: 20em;
+    background-color: pink;
+}
+
+.template4{
+    grid-area: template4;
+    height: 20em;
+    background-color: orange;
+}
+.template5{
+    grid-area: template5;
+    height: 20em;
+    background-color: grey;
+}
+
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .gridtemplate {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "template1 template1 template2 template2"
+        "template3 template3 template4 template4"
+        "template5 template5 template5 template5"
+    ;  
+    }
+}
+
+
+
+
+
+
+
+/* New grid end */
+
+
