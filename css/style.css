@@ -881,7 +881,6 @@ body.cd1Theme .section6 #iframe4{
 
 .sectiondemo{
     grid-area: sectiondemo;
-    background-color: red;
     height: 100vh;
 }
 .sectiondemo iframe{
@@ -899,3 +898,227 @@ body.cd1Theme .section6 #iframe4{
 
 /* Enema of the state page.  */
 
+
+ .grid5 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+            "section__2 section__2 section__2 section__2"
+            "section__3 section__3 section__3 section__3"
+            "section_10 section_10 section_10 section_10";
+}
+.section__1{
+    grid-area: section__1;
+    height: 20em;
+    margin-top: 100px;
+    background-image:url(../assets/images/albums/enema__os__bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section__2{
+    grid-area: section__2;
+    height: 30em;
+    background-color: black;
+}
+.section__2 iframe{
+    height: 100%;
+    width: 100%;
+}
+.section__3 img{
+    display: block;
+    height: 15em;
+    width: 15em;
+  margin-left: auto;
+    margin-right: auto;
+}
+.section__3 h1{
+    display: block;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+}
+.section__3{
+    grid-area: section__3;
+    height: 30em;
+    background-color: black;
+
+}
+
+/* Enema of the state media query  */
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid5 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+        "section__3 section__3 section__2 section__2"
+        "section_10 section_10 section_10 section_10"
+    ;  
+    }
+}
+
+
+
+/* Enema of the state page end.  */
+
+
+/* california */
+
+
+ .grid6 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+            "section__2 section__2 section__2 section__2"
+            "section__3 section__3 section__3 section__3"
+            "section_10 section_10 section_10 section_10";
+}
+.section__cal__1{
+    grid-area: section__1;
+    height: 20em;
+    background-image:url(../assets/images/albums/california__bg.jpg);
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section__cal__2{
+    grid-area: section__2;
+    height: 30em;
+    background-color: black;
+}
+.section__cal__2 iframe{
+    height: 100%;
+    width: 100%;
+}
+.section__cal__3 img{
+    display: block;
+    height: 15em;
+    width: 15em;
+   margin-left: auto;
+    margin-right: auto;
+}
+.section__cal__3 h1{
+    display: block;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+}
+.section__cal__3{
+    grid-area: section__3;
+    height: 30em;
+    background-color: black;
+
+}
+
+/* California media query */
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid6 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+        "section__3 section__3 section__2 section__2"
+        "section_10 section_10 section_10 section_10"
+    ;  
+    }
+}
+
+
+
+/*  cheshire cat start.  */
+
+
+/* cheshire cat */
+
+
+ .grid7 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+            "section__2 section__2 section__2 section__2"
+            "section__3 section__3 section__3 section__3"
+            "section_10 section_10 section_10 section_10";
+}
+.section__che__1{
+    grid-area: section__1;
+    height: 20em;
+    background-image:url(../assets/images/albums/Cheshire_cat__bg.jpg);
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section__che__2{
+    grid-area: section__2;
+    height: 30em;
+    background-color: black;
+}
+.section__che__2 iframe{
+    height: 100%;
+    width: 100%;
+}
+.section__che__3 img{
+    display: block;
+    height: 15em;
+    width: 15em;
+   margin-left: auto;
+    margin-right: auto;
+}
+.section__che__3 h1{
+    display: block;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+}
+.section__che__3{
+    grid-area: section__3;
+    height: 30em;
+    background-color: black;
+
+}
+
+/* cheshire cat media query */
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .grid7 {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "section__1 section__1 section__1 section__1"
+        "section__3 section__3 section__2 section__2"
+        "section_10 section_10 section_10 section_10"
+    ;  
+    }
+}
+
+
+
+/* cheshire cat end.  */
