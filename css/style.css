@@ -1133,7 +1133,7 @@ body.cd1Theme .section6 #iframe4{
         display: grid;
         overflow: hidden;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
         "template1 template1 template1 template1"
         "template2 template2 template2 template2"
