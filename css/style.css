@@ -1155,7 +1155,7 @@ body.cd1Theme .section6 #iframe4{
 .template2{
     grid-area: template2;
     height: 20em;
-    background-image: url(/assets/images/liveshows/blink182live5.png);
+    background-image: url(../assets/images/liveshows/blink182live5.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1175,7 +1175,7 @@ body.cd1Theme .section6 #iframe4{
 .template3{
     grid-area: template3;
     height: 20em;
-    background-image: url(/assets/images/albums/enema__os__bg.jpg);
+    background-image: url(../assets/images/albums/enema__os__bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1196,7 +1196,7 @@ body.cd1Theme .section6 #iframe4{
 .template4{
     grid-area: template4;
     height: 20em;
-    background-image: url(/assets/images/liveshows/blink182live2.png);
+    background-image: url(../assets/images/liveshows/blink182live2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
