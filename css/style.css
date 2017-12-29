@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
      font-family: 'Neutra Display', sans-serif; 
     text-decoration: none;
 }
+
 
 /* Sidebar internal styles */
 .sidebar {
@@ -1138,7 +1139,7 @@ body.cd1Theme .section6 #iframe4{
         "template2 template2 template2 template2"
         "template3 template3 template3 template3"
         "template4 template4 template4 template4"
-        "template5 template5 template5 template5";
+        "section_10 section_10 section_10 section_10";
 }
 .template1{
     grid-area: template1;
@@ -1164,6 +1165,12 @@ body.cd1Theme .section6 #iframe4{
    text-align: center;
    margin-top: 150PX;;
 }
+.template2:hover h1{
+    font-size: 40px;;
+}
+.template2 a{
+    text-decoration: none;
+}
 
 .template3{
     grid-area: template3;
@@ -1178,17 +1185,34 @@ body.cd1Theme .section6 #iframe4{
     text-align: center;
     margin-top: 150PX;   
 }
+.template3:hover h1{
+    font-size: 40px;;
+}
+
+.template3 a{
+    text-decoration: none;
+}
 
 .template4{
     grid-area: template4;
     height: 20em;
-    background-color: orange;
+    background-image: url(/assets/images/liveshows/blink182live2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.template5{
-    grid-area: template5;
-    height: 20em;
-    background-color: grey;
+.template4 h1{
+   color: white;
+   text-align: center;
+   margin-top: 150PX;;
 }
+.template4:hover h1{
+    font-size: 40px;;
+}
+.template4 a{
+    text-decoration: none;
+}
+
 .overlay2{
     height: 20em;
     width: 100%;
@@ -1209,7 +1233,8 @@ body.cd1Theme .section6 #iframe4{
         grid-template-areas:
         "template1 template1 template1 template1"
         "template2 template2 template3 template3"
-        "template4 template4 template5 template5"
+        "template4 template4 template4 template4"
+        "section_10 section_10 section_10 section_10"    
     ;  
     }
 }
@@ -1245,6 +1270,9 @@ body.cd1Theme .section6 #iframe4{
 .bxslider img{
     width: 100vw;
     height: 100vh;
+}
+.bx-wrapper img {
+    margin: 0 auto;
 }
 
 
