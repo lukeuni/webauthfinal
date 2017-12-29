@@ -1132,7 +1132,7 @@ body.cd1Theme .section6 #iframe4{
         display: grid;
         overflow: hidden;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
         "template1 template1 template1 template1"
         "template2 template2 template2 template2"
@@ -1142,19 +1142,41 @@ body.cd1Theme .section6 #iframe4{
 }
 .template1{
     grid-area: template1;
-    height: 20em;
-    background-color: red;
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.template1 img{
+    overflow: hidden;
 }
 .template2{
     grid-area: template2;
     height: 20em;
-    background-color: green;
+    background-image: url(/assets/images/liveshows/blink182live5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.template2 h1{
+   color: white;
+   text-align: center;
+   margin-top: 150PX;;
 }
 
 .template3{
     grid-area: template3;
     height: 20em;
-    background-color: pink;
+    background-image: url(/assets/images/albums/enema__os__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.template3 h1{
+    color: white;
+    text-align: center;
+    margin-top: 150PX;   
 }
 
 .template4{
@@ -1167,6 +1189,13 @@ body.cd1Theme .section6 #iframe4{
     height: 20em;
     background-color: grey;
 }
+.overlay2{
+    height: 20em;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.8;
+}
 
 
 @media screen and (min-width: 736px) {
@@ -1178,19 +1207,44 @@ body.cd1Theme .section6 #iframe4{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-        "template1 template1 template2 template2"
-        "template3 template3 template4 template4"
-        "template5 template5 template5 template5"
+        "template1 template1 template1 template1"
+        "template2 template2 template3 template3"
+        "template4 template4 template5 template5"
     ;  
     }
 }
 
 
-
-
-
-
-
 /* New grid end */
+
+/* slider start*/
+
+
+
+
+.bx-controls-direction a {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.bx-wrapper:hover .bx-controls-direction a {
+    opacity: 1;
+}
+
+
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: 0px;
+    left: -5px;
+    background: #fff;
+}
+.bxslider img{
+    width: 100vw;
+    height: 100vh;
+}
 
 

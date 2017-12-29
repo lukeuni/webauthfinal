@@ -425,6 +425,29 @@ $(window).scroll(function() {
 });
 
 AOS.init();
+    
+    $('.bxslider').bxSlider({
+  auto: true,
+  autoControls: false,
+  stopAutoOnClick: false,
+  pager: false,
+  responsive: true,
+  easing: 'easeInOutQuint',  
+  speed: 800,
+  startSlide: 0,
+  randomStart: false,
+  preloadImages: 'visible',
+ 
+        
 
+
+        
+        // TOUCH
+    touchEnabled: true,
+    oneToOneTouch: true,
+    preventDefaultSwipeX: true,
+    preventDefaultSwipeY: true,
+});
 
 }
+
