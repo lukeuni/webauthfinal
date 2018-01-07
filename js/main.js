@@ -1,5 +1,4 @@
 
-
 function initMap() {
     
 x = navigator.geolocation;

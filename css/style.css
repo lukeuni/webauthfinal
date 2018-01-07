@@ -1,89 +1,131 @@
 body {
     margin: 0;
-     font-family: 'Neutra Display', sans-serif; 
+    font-family: 'Neutra Display', sans-serif; 
     text-decoration: none;
+    background-color: white;
+}
+
+/* Hamburger Menu Start */
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #FFD240;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 45px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -8px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
 }
 
 
-/* Sidebar internal styles */
-.sidebar {
-    background: black;
-    width: 200px;
-    height: 100%;
-    display: block;
-    position: fixed;
-    left: -200px;
-    top: 0px;
-    transition: left 0.3s linear;
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
-/* Sidebar visibile transition and position*/
-
-.sidebar.visible {
-    left: 0px;
-    transition: left 0.3s linear;
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
 }
 
-/* ul list styles*/
-
-ul {
-    margin-top: 23px;
-    padding: 0px;
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
 }
 
-/* list styles*/
-
-ul li {
-    list-style: none;
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
 }
 
-/*  link styles such as underlining and color etc.*/
 
-ul li a {
-    color: #fff;
-    border-bottom: 1px solid #111;
-    display: block;
-    width: 180px;
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Neutra Display', sans-serif;
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/* Sidebar button styles for lines.*/
-
-.sidebar-btn {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
-    height: 19px;
-    cursor: pointer;
-    margin: 20px;
-    position: absolute;
-    top: 15px;
-    right: -90px;
-    ;
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* Edit physical lines of button.*/
-
-.sidebar-btn span {
-    height: 7px;
-    background: black;
-    margin-bottom: 3px;
-    display: block;
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  height: 100vh; 
+  background: #000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-/* changing 2 line to have smaller width than top.*/
-
-.sidebar-btn span:nth-child(2) {
-    width: 75%;
+#menu li
+{
+  padding: 10px 1px;
+  font-size: 15px;
 }
 
-/* changing third line to be smaller than 2nd line */
-
-.sidebar-btn span:nth-child(3) {
-    width: 50%;
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
+/* Hamburger menu end */
 
 /* Blink 182 logo top right. */
 
@@ -202,25 +244,19 @@ ul li a {
 
 .hero {
     grid-area: hero;
-    background-color: white;
+    background-color: black;
     width: 100%;
     background-image: url(../assets/images/backgrounds/hero__home__bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 52em;
+    opacity: 0.5;
     transition: background 1s;
     -webkit-transition: background 1s;
     -moz-transition: background 1s;
     }
 
-  .hero img{
-    display:block;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 16em;
-    }
 
 body.cd1Theme .hero{
      background-image: url(../assets/images/backgrounds/hero__st__bg.png); 
@@ -1269,8 +1305,11 @@ body.cd1Theme .section6 #iframe4{
     background: #fff;
 }
 .bxslider img{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .bx-wrapper img {
     margin: 0 auto;
