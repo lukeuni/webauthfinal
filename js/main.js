@@ -388,7 +388,7 @@ function homeTheme() {
 //functions for CD's end //
 
 //event listner on click for mini CD's at top of screen to change theme //
-
+`   `
 $(document).ready(function(){
   $('#cd-1').click(function() {
     cd1Theme();
@@ -437,9 +437,6 @@ AOS.init();
   randomStart: false,
   preloadImages: 'visible',
  
-        
-
-
         
         // TOUCH
     touchEnabled: true,

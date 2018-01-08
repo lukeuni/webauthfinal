@@ -26,9 +26,9 @@ a:hover
   top: 45px;
   left: 50px;
   z-index: 1;
-   width: 10%;
   -webkit-user-select: none;
   user-select: none;
+  width: 10%;
 }
 
 #menuToggle input
@@ -42,12 +42,9 @@ a:hover
   cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
   -webkit-touch-callout: none;
 }
-span{
-    z-index: -10;
-}
+
 
 
 #menuToggle span
@@ -1184,14 +1181,11 @@ body.cd1Theme .section6 #iframe4{
 }
 .template1{
     grid-area: template1;
-    background-color: yellow;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .template1 img{
-    overflow: hidden;
+    overflow: hidden;  
 }
 .template2{
     grid-area: template2;
