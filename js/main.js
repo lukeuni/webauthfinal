@@ -329,8 +329,7 @@ function failure(){
     
 }
       
-
-
+var mytheme = localStorage.getItem("theme"); 
 
 //fucntions for CD's start for hiding and unhiding top image on event listener//
 
@@ -344,6 +343,7 @@ function cd1Theme() {
     $("#hero-fading")[0].style.display = "block"; */
     $("body").attr('class', '');
     $('body').addClass('cd1Theme');
+    window.localStorage.setItem('theme', 1);
   };
 
 
@@ -357,6 +357,7 @@ function cd2Theme() {
     $("#hero-fading")[0].style.display = "block";*/
     $("body").attr('class', '');
     $('body').addClass('cd2Theme');
+    window.localStorage.setItem('theme', 2);
   };
     
 
@@ -370,6 +371,7 @@ function cd3Theme() {
     $("#hero-fading")[0].style.display = "block";*/
     $("body").attr('class', '');
     $('body').addClass('cd3Theme');
+    window.localStorage.setItem('theme', 3);
   };
 function homeTheme() {
  /* var newImage = "/assets/images/backgrounds/hero__es__bg .png";
@@ -381,6 +383,7 @@ function homeTheme() {
     $("#hero-fading")[0].style.display = "block";*/
     $("body").attr('class', '');
     $('body').addClass('');
+    window.localStorage.setItem('theme', 0);
   };
 
 
@@ -403,7 +406,24 @@ $(document).ready(function(){
     homeTheme();
   });
     
-  // sidebar button event listner for clicking it into canvas //
+ 
+if (window.localStorage.getItem("theme") == 0) {
+    homeTheme();
+  }
+  if (window.localStorage.getItem("theme") == 1) {
+    cd1Theme();
+  }
+  if (window.localStorage.getItem("theme") == 2) {
+    cd2Theme();
+  }
+  if (window.localStorage.getItem("theme") == 3) {
+    cd3Theme();
+  }
+    
+    
+    
+// sidebar button event listner for clicking it into canvas //
+    
     
   $('.sidebar-btn').click(function(){
   $('.sidebar').toggleClass('visible');

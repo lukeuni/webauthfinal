@@ -165,7 +165,7 @@ a:hover
 }
 .theme1 img{
     width: 50px;
-    height:50px;
+    height: 50px;
     float: right;
     margin:30px; 
 }
@@ -179,7 +179,7 @@ a:hover
     width: 50px;
     height:50px;
     float: right;
-    margin:30px;v
+    margin:30px;
 }
 .theme2 > img:hover {
     animation-name: rotate;
@@ -596,19 +596,28 @@ body.cd1Theme .section6 #iframe4{
 
 /* media query for hiding certain pictures on smaller devices. */
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 436px) {
     
     .theme1 img{
-        display: none;
+
     }
      .theme2 img{
-        display: none;
+
+        
     }
      .theme3 img{
-        display: none;
+
     }
     .logo img{
-        display: none;
+         padding-top: 0px;
+         height: 40px;
+         width: auto;
+         padding: 0px;
+         margin: 3px;
+         margin-top: 85px;
+    }
+    .nav{
+        height: 150px;
     }
 }
 
