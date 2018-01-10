@@ -1325,12 +1325,10 @@ body.cd1Theme .section6 #iframe4{
 /* slider end*/
 
 
-/* Report page start */
-
-
-.gridReport {
+.gridReport{
         
         display: grid;
+        overflow: hidden;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -1341,48 +1339,20 @@ body.cd1Theme .section6 #iframe4{
             "report5 report5 report5 report5"
             "report6 report6 report6 report6"
             "report7 report7 report7 report7"
-            "report8 report8 report8 report8"
-            ;
-        font-family:monospace;
-    }
-    h1{
-    font-size: 20px;
-    font-weight: 100;
-    }
-}
-
-@media screen and (min-width: 736px) {
+            "report8 report8 report9 report9"
+            "report10 report10 report10 report10"
+            "report11 report11 report11 report11"
+            "report12 report12 report12 report12";
     
- 
-    .gridReport {
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "report1 report1 report1 report1"
-            "report2 report2 report2 report2"
-            "report3 report3 report3 report3 "
-            "report4 report4 report4 report4"
-            "report5 report5 report5 report5"
-            "report6 report6 report6 report6"
-            "report7 report7 report7 report7"
-            "report8 report8 report8 report8"    
-    ;  
-        
-        font-family:monospace;
-    }
-    h1{
-    font-size: 20px;
-    font-weight: 100;
-    }
 }
 
-
-
-
-/* Report page end */
-
+.gridReport h1{
+    font-size: 20px;
+    font-family:monospace;
+}
+.gridReport p{
+    font-family: monospace;
+}
 
 .report1{
     grid-area: report1;
@@ -1397,7 +1367,7 @@ body.cd1Theme .section6 #iframe4{
 }
 .report2{
     grid-area: report2;
-    height: 20em;
+    height: auto;
     background-color: white; 
 }
 .report2 h1{
@@ -1413,40 +1383,82 @@ body.cd1Theme .section6 #iframe4{
 .report3{
     grid-area: report3;
     height: auto;
+    background-color: white;
     padding-left: 20px;
 }
-
 .report4{
     grid-area: report4;
     height: auto;
+    background-color: white;
     padding-left: 20px;
-
 }
-
 .report5{
     grid-area: report5;
     height: auto;
+    background-color: white;
     padding-left: 20px;
 }
-
 .report6{
     grid-area: report6;
     height: auto;
-    background-color: white;   
+    background-color: white;
+    padding-left: 20px;
 }
 .report6 img{
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .report7{
     grid-area: report7;
-    height: 20em;
-    background-color: blue; 
+    height: auto;
+    background-color: white;
+    padding-left: 20px;
 }
 .report8{
     grid-area: report8;
-    height: 20em;
-    background-color: grey; 
+    height: auto;
+    background-color: white;
 }
-
-
-
+.report8 img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.report9{
+    grid-area: report9;
+    height: auto;
+    background-color: white;
+}
+.report9 img{
+    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.report10{
+    grid-area: report10;
+    height: auto;
+    background-color: white;
+}
+.report10 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#grid2image{
+    width: 100%;
+}
+.report11{
+    grid-area: report11;
+    height: 20em;
+    background-color: fuchsia;
+}
+.report12{
+    grid-area: report12;
+    height: 20em;
+    background-color: chocolate;
+}
