@@ -596,7 +596,7 @@ body.cd1Theme .section6 #iframe4{
 
 /* media query for hiding certain pictures on smaller devices. */
 
-@media screen and (max-width: 436px) {
+@media screen and (max-width: 636px) {
     
     .theme1 img{
 
@@ -1339,7 +1339,8 @@ body.cd1Theme .section6 #iframe4{
             "report5 report5 report5 report5"
             "report6 report6 report6 report6"
             "report7 report7 report7 report7"
-            "report8 report8 report9 report9"
+            "report8 report8 report8 report8"
+            "report9 report9 report9 report9"
             "report10 report10 report10 report10"
             "report11 report11 report11 report11"
             "report12 report12 report12 report12";
@@ -1415,6 +1416,7 @@ body.cd1Theme .section6 #iframe4{
     height: auto;
     background-color: white;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 .report8{
     grid-area: report8;
@@ -1431,6 +1433,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: report9;
     height: auto;
     background-color: white;
+    padding-left: 20px;
 }
 .report9 img{
     padding-left: 20px;
@@ -1442,6 +1445,7 @@ body.cd1Theme .section6 #iframe4{
     grid-area: report10;
     height: auto;
     background-color: white;
+    padding-left: 20px;
 }
 .report10 img{
     display: block;
@@ -1449,16 +1453,44 @@ body.cd1Theme .section6 #iframe4{
     margin-right: auto;
     width: 50%;
 }
+
 #grid2image{
     width: 100%;
 }
 .report11{
     grid-area: report11;
-    height: 20em;
-    background-color: fuchsia;
+    height: auto;
+    background-color: white;
+    padding-left: 20px;
 }
 .report12{
     grid-area: report12;
     height: 20em;
     background-color: chocolate;
 }
+
+
+@media screen and (min-width: 736px) {
+    
+ 
+    .gridReport {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+           "report1 report1 report1 report1"
+            "report2 report2 report2 report2"
+            "report3 report3 report3 report3"
+            "report4 report4 report4 report4"
+            "report5 report5 report5 report5"
+            "report6 report6 report6 report6"
+            "report7 report7 report7 report7"
+            "report8 report8 report9 report9"
+            "report10 report10 report10 report10"
+            "report11 report11 report11 report11"
+            "report12 report12 report12 report12"
+    ;  
+    }
+}
+

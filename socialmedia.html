@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <title>Blink182</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/loaders.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="css/fonta">
+    <link rel="stylesheet" type="text/css" href="css/fonta">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6nsTw-OEMw_urA2lyxEOAVq8WVTamphI&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,18 +26,27 @@
 </head>
 
 <body>
-  
-     <!-- navbar start -->
+    
+     <!-- Loading Animation -->
+<div class="loader">
+    <div class="loader-inner ball-rotate">
+    </div>
+</div>
+<!-- Loading animation end -->
+    
+
+<!-- navbar start -->
     
     <div class="nav" id="nav">
         <div class="logo">
-           <a href="index.html"><img class="logo1 animated bounceIn" src="assets/images/icons/blink__logo.png" id="logo"></a>
-            <div id="cd-1" class="theme1 animated fadeIn"><img src="assets/images/albums/album1.png"></div>
-            <div id="cd-2" class="theme2 animated fadeIn"><img src="assets/images/albums/album2.png"></div>
-            <div id="cd-3" class="theme3 animated fadeIn"><img src="assets/images/albums/album3.png"></div>
+        <a href="index.html"><img class="logo1 animated bounceIn" src="assets/images/icons/blink__logo.png" id="logo"></a>
+        <div id="cd-1" class="theme1 animated fadeIn"><img src="assets/images/albums/album1.png"></div>
+        <div id="cd-2" class="theme2 animated fadeIn"><img src="assets/images/albums/album2.png"></div>
+        <div id="cd-3" class="theme3 animated fadeIn"><img src="assets/images/albums/album3.png"></div>
         </div>
+        
         <nav role="navigation">
-    <div id="menuToggle">
+        <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
         <span></span>
@@ -45,6 +56,7 @@
       <a href="about.html"><li>ABOUT</li></a>
       <a href="demo.html"><li>DEMO</li></a>
       <a href="socialmedia.html"><li>SOCIAL MEDIA</li></a>
+      <a href="report.html"><li>REPORT</li></a>  
     </ul>
   </div>
 </nav>
