@@ -24,28 +24,18 @@
 
 
 </head>
-
-<body>
-    
-     <!-- Loading Animation -->
-<div class="loader">
-    <div class="loader-inner ball-rotate">
-    </div>
-</div>
-<!-- Loading animation end -->
     
 
-<!-- navbar start -->
-    
-    <div class="nav" id="nav">
+
+    <!-- navbar start -->
+      <div class="nav21" id="nav">
         <div class="logo">
         <a href="index.html"><img class="logo1 animated bounceIn" src="assets/images/icons/blink__logo.png" id="logo"></a>
-        <div id="cd-1" class="theme1 animated fadeIn"><img src="assets/images/albums/album1.png"></div>
-        <div id="cd-2" class="theme2 animated fadeIn"><img src="assets/images/albums/album2.png"></div>
-        <div id="cd-3" class="theme3 animated fadeIn"><img src="assets/images/albums/album3.png"></div>
+        <div id="cd-1" class="theme1 animated fadeIn"><img src="assets/images/albums/album1.png" alt="blink182 album image"></div>
+        <div id="cd-2" class="theme2 animated fadeIn"><img src="assets/images/albums/album2.png" alt="blink182 album image"></div>
+        <div id="cd-3" class="theme3 animated fadeIn"><img src="assets/images/albums/album3.png" alt="blink182 album image"></div>
         </div>
-        
-        <nav role="navigation">
+
         <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -59,45 +49,66 @@
       <a href="report.html"><li>REPORT</li></a>  
     </ul>
   </div>
-</nav>
 </div>    
 <!-- Navbar end -->
+  
+    <body id="bg">
 
-<body>
-    
-    <div class="spinning">
-    <div class="grid3">
-        
-        <div class="cd__spin__1 "><img src="assets/images/albums/album1.png" class="spinning"></div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <div class="cd__spin__2"><img src="assets/images/albums/album2.png"  class="spinning"></div>
-    <div class="cd__spin__3"><img src="assets/images/albums/album3.png"  class="spinning"></div>
-        
-    </div>
-    </div>
+        <!––blink 182 logo at top.--!>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+        <!––Album 1.--!>
+
+        <div id="imagesMain">
+            <a href="page1.html">
+                <div class="imagesMain__item animated fadeIn pulse" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+                    <img src="ASSETS/IMAGES/albums/album1.png" />
+                    <div class="imagesMain__item__bg"><video playsinline autoplay muted loop poster="ASSETS/IMAGES/albums/album1.png" id="bgvid">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/webm" type="video/webm">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/webm" type="video/mp4"> 
+               </video></div>
+                </div>
+            </a>
+
+
+            <!––CD 2--!>
+<a href="page2.html">
+            <div class="imagesMain__item animated fadeIn" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+                <img id="album2" src="ASSETS/IMAGES/albums/album2.png" />
+                <div class="imagesMain__item__bg"><video playsinline autoplay muted loop poster="ASSETS/IMAGES/albums/album2.png" id="bgvid">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/webm">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/mp4">
+</video></div>
+
+            </div>
+                </a>
+
+
+            <!––blink 182 logo at top.--!>
+
+            <div class="imagesMain__item animated fadeIn" onmouseover="PlaySound('firstDate')" onmouseout="StopSound('firstDate')">
+                <img id="album3" src="ASSETS/IMAGES/albums/album3.png" />
+                <div class="imagesMain__item__bg"><video playsinline autoplay muted loop poster="images/vinyl2.png" id="bgvid">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/webm">
+    <source src="/assets/videos/home__screen__video.mp4" type="video/webm" type="video/mp4">
+</video></div>
+
+
+            <!––blink 182 logo at top.--!>
+
+
+                <audio id='mySound' src='ASSETS/Songs/blink182cropped.mp3' />
+                <audio id='smallThings' src='ASSETS/Songs/blink182cropped.mp3' />
+                <audio id='firstDate' src='ASSETS/Songs/blink182cropped.mp3' />
+            </div>
+        </div>
+
+
+
+
+
+   
+
     
     
     

@@ -1509,3 +1509,84 @@ body.cd1Theme .section6 #iframe4{
     }
 }
 
+
+
+
+
+
+
+
+#imagesMain {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    text-align: center;
+
+}
+
+.imagesMain__item {
+    display: inline-block;
+    height: 350px;
+    position: relative;
+    width: 350px;
+    padding: 10px;
+
+}
+
+.imagesMain__item img {
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+
+
+
+}
+
+.imagesMain__item__bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    transition: all ease-in-out 0.2s;
+    transform: scale(0);
+    right: 0;
+    top: 0;
+}
+
+.imagesMain__item > img:hover {
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.imagesMain__item > img:hover + .imagesMain__item__bg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar21{
+    position: absolute;
+    z-index: 10000;
+}
+
+
+
+
