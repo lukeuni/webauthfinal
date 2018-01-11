@@ -227,7 +227,7 @@ a:hover
     display: grid;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr;
     grid-template-areas:
         
         "hero hero"
@@ -694,9 +694,9 @@ body.cd1Theme .section6 #iframe4{
     display: block;
     font-family: 'Neutra Display Light';
     color:white;
-    font-size: 7em;
+    font-size: 3em;
     text-align:center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .section_2{
     grid-area: section_2;
@@ -831,6 +831,9 @@ body.cd1Theme .section6 #iframe4{
         "section_10 section_10 section_10 section_10 section_10 section_10 section_10 section_10"
     ;  
     }
+    .section_1 h1{
+        font-size: 7em;
+         margin-top: 60px;
 }
 
 
