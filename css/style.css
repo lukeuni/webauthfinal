@@ -840,6 +840,8 @@ body.cd1Theme .section6 #iframe4{
          margin-top: 60px;
 }
 
+}
+
 
 
 
@@ -1347,8 +1349,9 @@ body.cd1Theme .section6 #iframe4{
             "report10 report10 report10 report10"
             "report11 report11 report11 report11"
             "report12 report12 report12 report12";
+    }
     
-}
+
 
 .gridReport h1{
     font-size: 20px;
@@ -1465,11 +1468,20 @@ body.cd1Theme .section6 #iframe4{
     height: auto;
     background-color: white;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 .report12{
     grid-area: report12;
-    height: 20em;
-    background-color: chocolate;
+    height: auto;
+    background-color: white;
+}
+.report12 img{
+     padding-left: 20px;
+     width: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    padding-bottom: 20px;
 }
 
 
