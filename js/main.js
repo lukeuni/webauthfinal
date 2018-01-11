@@ -1,10 +1,17 @@
+// start of google map // 
 
 function initMap() {
+
+// get user position //
     
 x = navigator.geolocation;
 
+    // success and failure for get geo position of user. // 
+    
 x.getCurrentPosition(success, failure);
 
+    // If we manage to get the location then do this stuff. Also style the hell out of the map. //
+    
 function success(position) {
     var mylat = position.coords.latitude;
     var mylong = position.coords.longitude;
@@ -281,6 +288,7 @@ function success(position) {
             ]
         });
     
+    // click on venue and show information about the next show with drop animations. // 
          var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
@@ -316,7 +324,9 @@ function success(position) {
           animation: google.maps.Animation.DROP,
 
       })
-
+        
+// listen for that click and show the info when it is clicked.  //
+        
          venue1.addListener('click', function() {
           infowindow.open(map, venue1);
         });
@@ -328,11 +338,15 @@ function success(position) {
 function failure(){
     
 }
+    
+// local storage for theme. //    
       
 var mytheme = localStorage.getItem("theme"); 
 
 //fucntions for CD's start for hiding and unhiding top image on event listener//
 
+// the commented out code here is something i came up with to get the fade animation to work with firefox but it wasn't sustainable option. //
+    
 function cd1Theme() {
   /*var newImage = "/assets/images/backgrounds/hero__st__bg.png";
   $("#sc-track-title")[0].innerHTML = "I MISS YOU";
@@ -406,7 +420,8 @@ $(document).ready(function(){
     homeTheme();
   });
     
- 
+ // local storage logic for which theme is being saved and shown. //
+    
 if (window.localStorage.getItem("theme") == 0) {
     homeTheme();
   }
@@ -422,16 +437,16 @@ if (window.localStorage.getItem("theme") == 0) {
     
     
     
-// sidebar button event listner for clicking it into canvas //
+// sidebar button event listner for clicking it into canvas. This code is no longer used as I decided to use an all CSS approach for my hamburger menu.  //
     
-    
+ /*   
   $('.sidebar-btn').click(function(){
   $('.sidebar').toggleClass('visible');
   });
-});
+}); */
 
 
-// scroll function for drop shadow on sticky navbar // 
+// scroll function for drop shadow on sticky navbar and shadows // 
 
 $(window).scroll(function() {     
   var scroll = $(window).scrollTop();
@@ -443,7 +458,10 @@ $(window).scroll(function() {
   }
 });
 
+    // Javascript library for showing elements in an interesting way. // 
 AOS.init();
+    
+    // Custom bx slider with auto hide controls. //
     
     $('.bxslider').bxSlider({
   auto: true,
