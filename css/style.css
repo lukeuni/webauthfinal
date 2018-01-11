@@ -1360,7 +1360,7 @@ body.cd1Theme .section6 #iframe4{
     height: 20em;
     background-color: white;
     margin-top: 200px;
-    background-image:url(/assets/images/report/uni__logo.jpg);
+    background-image:url(../assets/images/report/uni__logo.jpg);
     background-size:     contain;
     background-repeat:   no-repeat;
     background-position: center center;
